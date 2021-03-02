@@ -1,3 +1,5 @@
-# beatlify
+# Beatlify
 
-Beatlify is an ✨**epic**✨ site where you can listen music on!
+Beatlify is the absolutely ✨epic✨ site where you can listen to music straight from YouTube.
+
+###### hi youtube please dont sue
