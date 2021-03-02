@@ -5,9 +5,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #1a1a1a;
 }
 
 .main {
+  background: #1a1a1a;
   padding: 5rem 0;
   flex: 1;
   display: flex;
@@ -33,11 +35,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #1a1a1a;
 }
 
 .title a {
   color: #0070f3;
   text-decoration: none;
+  background: #1a1a1a;
 }
 
 .title a:hover,
@@ -111,7 +115,7 @@
 }
 
 .logo {
-  height: 1em;
+  height: 5em;
 }
 
 @media (max-width: 600px) {

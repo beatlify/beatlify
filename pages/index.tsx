@@ -5,7 +5,7 @@ const Home: React.FC = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Beatlify</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -56,8 +56,7 @@ const Home: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          <img src="/logo.png" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
     </div>
