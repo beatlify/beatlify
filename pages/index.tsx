@@ -9,7 +9,7 @@ const Home: React.FC = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to <b>Netlify</b></h1>
+        <h1 className={styles.title}>Welcome to <b>Beatlify</b></h1>
         <h4 className={styles.desc}><i>Under Heavy Development</i></h4>
       </main>
 
@@ -19,7 +19,7 @@ const Home: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/logo.png" alt="Vercel Logo" className={styles.logo} />
+          <img src="/logo.png" alt="Beatlify" className={styles.logo} />
         </a>
       </footer>
       
