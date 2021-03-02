@@ -9,8 +9,12 @@ const Home: React.FC = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to <b>Beatlify</b></h1>
-        <h4 className={styles.desc}><i>Under Heavy Development</i></h4>
+        <h1 className={styles.title}>
+          Welcome to <b>Beatlify</b>
+        </h1>
+        <h4 className={styles.desc}>
+          <i>Under Heavy Development</i>
+        </h4>
       </main>
 
       <footer className={styles.footer}>
@@ -22,7 +26,6 @@ const Home: React.FC = () => {
           <img src="/logo.png" alt="Beatlify" className={styles.logo} />
         </a>
       </footer>
-      
     </div>
   );
 };
