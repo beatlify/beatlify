@@ -8,6 +8,7 @@
   background: #141516;
 }
 
+
 .main {
   background: #141516;
   padding: 5rem 0;
@@ -74,7 +75,7 @@
 }
 
 .code {
-  background: #fafafa;
+  background: #2a2a2a;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
