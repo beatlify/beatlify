@@ -5,11 +5,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #1a1a1a;
+  background: #141516;
 }
 
 .main {
-  background: #1a1a1a;
+  background: #141516;
   padding: 5rem 0;
   flex: 1;
   display: flex;
@@ -41,7 +41,7 @@
 .title a {
   color: #0070f3;
   text-decoration: none;
-  background: #1a1a1a;
+  background: #141516;
 }
 
 .title a:hover,
@@ -49,11 +49,18 @@
 .title a:active {
   text-decoration: underline;
 }
+.title b:hover,
+.title b:focus,
+.title b:active {
+  color:#0092f3
+  
+}
 
 .title {
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  color: white;
 }
 
 .title,
@@ -123,4 +130,11 @@
     width: 100%;
     flex-direction: column;
   }
+}
+.footer a {
+  background: #141516;
+}
+.desc {
+  font-size: 1rem;
+  color: white;
 }
