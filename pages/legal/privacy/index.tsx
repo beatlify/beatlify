@@ -13,17 +13,18 @@ const Privacy: React.FC = () => (
     <Header />
     <Content>
       <Box textAlign="center">
+        <Heading size="lg">Privacy Policy</Heading>
         <Box m="2">
           <Link href="/legal/privacy/user">
             <Button bg="#2a2a2a" _hover={{ bg: "#3a3a3a" }}>
-              User Mode
+              Summary
             </Button>
           </Link>
         </Box>
         <Box m="2">
           <Link href="/legal/privacy/lawyer">
             <Button bg="#2a2a2a" _hover={{ bg: "#3a3a3a" }}>
-              Lawyer Mode
+              For lawyers
             </Button>
           </Link>
         </Box>

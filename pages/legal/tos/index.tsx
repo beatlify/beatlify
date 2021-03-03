@@ -13,17 +13,18 @@ const ToS: React.FC = () => (
     <Header />
     <Content>
       <Box textAlign="center">
+        <Heading size="lg">Terms of Service</Heading>
         <Box m="2">
           <Link href="/legal/tos/user">
             <Button bg="#2a2a2a" _hover={{ bg: "#3a3a3a" }}>
-              User Mode
+              Summary
             </Button>
           </Link>
         </Box>
         <Box m="2">
           <Link href="/legal/tos/lawyer">
             <Button bg="#2a2a2a" _hover={{ bg: "#3a3a3a" }}>
-              Lawyer Mode
+              For lawyers
             </Button>
           </Link>
         </Box>
