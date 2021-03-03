@@ -1,13 +1,25 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import React from "react";
-import { Box, Flex, Text, Button, Link, Image as ChakraUI } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Text,
+  Button,
+  Link,
+  Image as ChakraUI,
+} from "@chakra-ui/react";
 import Logo from "./Logo";
 //@ts-ignore
-const MenuItem = ({ children, isLast, to = "/", ...rest }: {
-    [x: string]: unknown;
-    children: React.ReactNode;
-    isLast?: unknown;
-    to?: string | undefined;
+const MenuItem = ({
+  children,
+  isLast,
+  to = "/",
+  ...rest
+}: {
+  [x: string]: unknown;
+  children: React.ReactNode;
+  isLast?: unknown;
+  to?: string | undefined;
 }) => {
   return (
     <Text
@@ -85,8 +97,8 @@ const Header = (props: unknown): JSX.Element => {
             <Button
               size="sm"
               rounded="md"
-              color={["black", "black", "black", "black"]}
-              bg={["white", "white", "black", "black"]}
+              color={["primary.500", "black", "black", "black"]}
+              bg={["white", "white", "primary.500", "primary.500"]}
               _hover={{
                 bg: [
                   "primary.100",
@@ -97,7 +109,12 @@ const Header = (props: unknown): JSX.Element => {
               }}
             >
               Login with{" "}
-              <ChakraUI marginLeft="4px" paddingLeft="4px" width="5" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+              <ChakraUI
+                marginLeft="4px"
+                paddingLeft="4px"
+                width="5"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
+              />
             </Button>
           </MenuItem>
         </Flex>
