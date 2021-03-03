@@ -3,11 +3,9 @@ import { Box, Flex, Heading, Link, Image } from "@chakra-ui/react";
 import Header from "../components/Header";
 import Content from "../components/Content";
 import Footer from "../components/Footer";
-import styles from "../styles/Home.module.css"
 
 const Home: React.FC = () => (
-  
-  <Box className={styles.welcomeTitle}>
+  <Box>
     <Head>
       <title>Beatlify</title>
       <Link rel="icon" href="/favicon.ico" />
@@ -33,7 +31,6 @@ const Home: React.FC = () => (
     </Content>
     <Footer />
   </Box>
-    
 );
 
 export default Home;
