@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import React from "react";
-import type { AppProps } from "next/app";
+import { AppProps } from "next/app";
 import { CSSReset, theme, ThemeProvider } from "@chakra-ui/react";
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {

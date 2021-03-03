@@ -1,13 +1,15 @@
 import Head from "next/head";
 import { Box, Flex, Heading, Link, Image } from "@chakra-ui/react";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
+//import Header from "../components/Header";
+import styles from '../styles/Home.module.css'
 
 const Home: React.FC = () => (
-  <Box>
+  <div>
+  <Box className={styles.welcomeTitle}>
     <Head>
       <title>Beatlify</title>
-      <link rel="icon" href="/favicon.ico" />
+      <Link rel="icon" href="/favicon.ico" />
     </Head>
 
     <Flex
@@ -27,8 +29,10 @@ const Home: React.FC = () => (
         <i>Under Heavy Development</i>
       </Heading>
     </Flex>
-    <Footer />
+    
   </Box>
+    <Footer />
+  </div>
 );
 
 export default Home;

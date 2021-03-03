@@ -35,7 +35,7 @@ const ToSLawyer: React.FC = () => (
         </Box>
         <Box marginBottom="10">
           <Heading size="md">2. YouTube's Content</Heading>
-          <Text>
+          <Text >
             Beatlify is a user-friendly interface that allows you to listen to
             music and videos uploaded to the{" "}
             <ChakraLink href="https://youtube.com">YouTube</ChakraLink> video

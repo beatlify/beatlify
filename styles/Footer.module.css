@@ -1,0 +1,15 @@
+.Box:hover,
+.Box:focus,
+.Box:active {
+    color:aqua;
+    transition: color 0.5s ease;
+}.Box {
+    color: gray;
+}
+.footer {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 4cm;
+    left: 0;
+}

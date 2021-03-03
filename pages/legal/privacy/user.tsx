@@ -10,13 +10,13 @@ const ToSUser: React.FC = () => (
       <title>Privacy Policy - Beatlify</title>
     </Head>
     <Header />
-    <Box textAlign="center">
+    <Box textAlign="center" color="white">
       <Box marginBottom="10">
         <Heading size="lg">Privacy Policy (Summary)</Heading>
         <Text>Last updated: 2021 March 3</Text>
       </Box>
       <Container marginBottom="10" textAlign="center">
-        Keep it nice and clean; We do not have access to your data.
+        Keep it nice and clean; We do not handle and do not want to handle any data of yours.
       </Container>
       And what if I wanna sue?
       <Box m="3">
