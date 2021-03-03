@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import styles from "../styles/Home.module.css"
 
 const Home: React.FC = () => (
-  <div>
+  
   <Box className={styles.welcomeTitle}>
     <Head>
       <title>Beatlify</title>
@@ -33,8 +33,7 @@ const Home: React.FC = () => (
     </Content>
     <Footer />
   </Box>
-    <Footer />
-  </div>
+    
 );
 
 export default Home;
