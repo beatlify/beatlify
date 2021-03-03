@@ -1,11 +1,11 @@
 import { Box, Heading, Button } from "@chakra-ui/react";
 import Link from "next/link";
-import Header from "../../components/Header";
+import Header from "../../components/header-components/Header";
 import Content from "../../components/Content";
 import Footer from "../../components/Footer";
 
 const Legal: React.FC = () => (
-  <Box>
+  <Box display="flex" flexDirection="column" minHeight="103vh">
     <Header />
     <Content>
       <Box textAlign="center">

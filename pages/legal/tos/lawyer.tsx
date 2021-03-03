@@ -9,12 +9,12 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import Link from "next/link";
-import Header from "../../../components/Header";
+import Header from "../../../components/header-components/Header";
 import Content from "../../../components/Content";
 import Footer from "../../../components/Footer";
 
 const ToSLawyer: React.FC = () => (
-  <Box>
+  <Box display="flex" flexDirection="column" minHeight="103vh">
     <Head>
       <title>Terms of Service - Legal - Beatlify</title>
     </Head>
