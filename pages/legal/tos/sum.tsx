@@ -8,7 +8,7 @@ import Footer from "../../../components/Footer";
 const ToSUser: React.FC = () => (
   <Box display="flex" flexDirection="column" minHeight="103vh">
     <Head>
-      <title>Terms of Service - Beatlify</title>
+      <title>Terms of Service (Summary) - Beatlify</title>
     </Head>
     <Header />
     <Content>
@@ -49,7 +49,7 @@ const ToSUser: React.FC = () => (
         And what if I wanna sue?
         <Box m="3">
           <Button>
-            <Link href="/legal/tos/lawyer">Lawyer Mode</Link>
+            <Link href="/legal/tos">Full Document</Link>
           </Button>
         </Box>
       </Box>
