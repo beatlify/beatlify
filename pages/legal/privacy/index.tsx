@@ -1,5 +1,5 @@
 import { Box, Container, Heading, Button } from "@chakra-ui/react";
-import Link from "next/link";
+import NextLink from "next/link";
 import Header from "../../../components/Header";
 import Content from "../../../components/Content";
 import Footer from "../../../components/Footer";
@@ -13,20 +13,27 @@ const Privacy: React.FC = () => (
     <Header />
     <Content>
       <Box textAlign="center">
-        <Heading size="lg">Privacy Policy</Heading>
-        <Box m="2">
-          <Link href="/legal/privacy/user">
-            <Button>Summary</Button>
-          </Link>
-        </Box>
-        <Box m="2">
-          <Link href="/legal/privacy/lawyer">
-            <Button>For lawyers</Button>
-          </Link>
-        </Box>
+        <Heading m="1.5rem" size="lg">
+          Privacy Policy
+        </Heading>
+        <Link title="Summary" uri="/legal/privacy/user" />
+        <Link title="For lawyers" uri="/legal/privacy/lawyer" />
       </Box>
     </Content>
     <Footer />
+  </Box>
+);
+
+type LinkProps = {
+  title: string;
+  uri: string;
+};
+
+const Link: React.FC<LinkProps> = props => (
+  <Box m="2">
+    <NextLink href={props.uri}>
+      <Button>{props.title}</Button>
+    </NextLink>
   </Box>
 );
 

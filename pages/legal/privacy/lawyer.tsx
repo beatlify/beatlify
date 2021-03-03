@@ -8,7 +8,7 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import Head from "next/head";
-import Link from "next/link";
+import NextLink from "next/link";
 import Header from "../../../components/Header";
 import Content from "../../../components/Content";
 import Footer from "../../../components/Footer";
@@ -26,41 +26,64 @@ const PrivacyLawyer: React.FC = () => (
           <Text>Last updated: 2021 March 3</Text>
         </Box>
         <Container textAlign="justify">
-          <Box marginBottom="10">
-            <Heading size="md">1. Definitions</Heading>
-            <Text>
-              We/Us/Our: The creators and contributors of Beatlify <br />
-              You: Our users <br />
-              Content: YouTube music and/or videos accessible through the
-              Beatlify system.
-            </Text>
-          </Box>
-          <Box marginBottom="10">
-            <Heading size="md">2. Your data</Heading>
-            <Text>
-              To make it clear, we do not handle your data. Our services
-              communicate with YouTube and Google servers, who handle your data.
-              Please refer to their privacy policy.
-              <Box>
-                <Button m="2">
-                  <ChakraLink href="https://policies.google.com/privacy?hl=en-US">
-                    Google's Privacy Policy
-                  </ChakraLink>
-                </Button>
-              </Box>
-            </Text>
-          </Box>
+          <Par title="1. Definitions">
+            We/Us/Our: The creators and contributors of Beatlify <br />
+            You: Our users <br />
+            Content: YouTube music and/or videos accessible through the Beatlify
+            system.
+          </Par>
+          <Par
+            title="2. Your data"
+            links={[
+              {
+                title: "Google's Privacy Policy",
+                uri: "https://policies.google.com/privacy?hl=en-US",
+              },
+            ]}
+          >
+            To make it clear, we do not handle your data. Our services
+            communicate with YouTube and Google servers, who handle your data.
+            Please refer to their privacy policy.
+          </Par>
         </Container>
         Well, that was long...
         <Box m="3">
           <Button>
-            <Link href="/legal/privacy/user">User Mode</Link>
+            <NextLink href="/legal/privacy/user">Summary</NextLink>
           </Button>
         </Box>
       </Box>
     </Content>
     <Footer />
   </Box>
+);
+
+type ParProps = {
+  title: string;
+  links?: LinkProps[];
+};
+
+const Par: React.FC<ParProps> = props => (
+  <Box marginBottom="10">
+    <Heading size="md">{props.title}</Heading>
+    <Text>{props.children}</Text>
+    <Box>
+      {props.links
+        ? props.links.map(l => <Link title={l.title} uri={l.uri} />)
+        : ""}
+    </Box>
+  </Box>
+);
+
+type LinkProps = {
+  title: string;
+  uri: string;
+};
+
+const Link: React.FC<LinkProps> = props => (
+  <Button m="2">
+    <ChakraLink href={props.uri}>{props.title}</ChakraLink>
+  </Button>
 );
 
 export default PrivacyLawyer;
