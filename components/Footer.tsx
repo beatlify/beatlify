@@ -6,10 +6,10 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import styles from '../styles/Footer.module.css'
+import styles from "../styles/Footer.module.css";
 
 const Footer: React.FC = () => (
-  <Box className={styles.footer} color="#666666" p="5" borderTop={["1px", "solid"]}>
+  <Box color="#666666" p="5" borderTop={["1px", "solid"]}>
     <Box>
       <Heading color="#888888" mb="1" size="xs">
         Navigation
@@ -33,7 +33,7 @@ const Footer: React.FC = () => (
         <Image src="/logo.png" alt="Beatlify Logo" h="5em" />
       </ChakraLink>
     </Flex>
-    </Box>
+  </Box>
 );
 
 export default Footer;
