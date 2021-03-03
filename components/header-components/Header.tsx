@@ -85,8 +85,8 @@ const Header = (props: unknown): JSX.Element => {
             <Button
               size="sm"
               rounded="md"
-              color={["primary.500", "primary.500", "black", "black"]}
-              bg={["white", "white", "primary.500", "primary.500"]}
+              color={["black", "black", "black", "black"]}
+              bg={["white", "white", "black", "black"]}
               _hover={{
                 bg: [
                   "primary.100",
