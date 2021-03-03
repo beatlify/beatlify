@@ -6,9 +6,15 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
+import styles from "../styles/Footer.module.css";
 
 const Footer: React.FC = () => (
-  <Box color="#666666" p="5" borderTop={["1px", "solid"]}>
+  <Box
+    align-self="flex-end"
+    color="#666666"
+    p="5"
+    borderTop={["0.5cm", "solid"]}
+  >
     <Box>
       <Heading color="#888888" mb="1" size="xs">
         Navigation
@@ -17,7 +23,7 @@ const Footer: React.FC = () => (
       <Link title="Terms of Service" uri="/legal/tos" />
       <Link title="Privacy Policy" uri="/legal/privacy" />
     </Box>
-    <Flex as="footer" minH="100px" justifyContent="center" bottom="0">
+    <Flex minH="100px" justifyContent="center" bottom="0">
       <ChakraLink
         href="https://github.com/beatlify/beatlify"
         target="_blank"
@@ -36,7 +42,9 @@ type LinkProps = {
 
 const Link: React.FC<LinkProps> = props => (
   <Box transition={["ease-in-out", "500ms"]} _hover={{ color: "#888888" }}>
-    <NextLink href={props.uri}>{props.title}</NextLink>
+    <NextLink href={props.uri}>
+      <a className={styles.footerElement}>{props.title}</a>
+    </NextLink>
   </Box>
 );
 

@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import NextLink from "next/link";
-import Header from "../../../components/Header";
+import Header from "../../../components/header-components/Header";
 import Content from "../../../components/Content";
 import Footer from "../../../components/Footer";
 import Lawyer from "../../../components/legal/Lawyer";
@@ -49,34 +49,6 @@ const PrivacyLawyer: React.FC = () => (
       },
     ]}
   />
-);
-
-type ParProps = {
-  title: string;
-  links?: LinkProps[];
-};
-
-const Par: React.FC<ParProps> = props => (
-  <Box marginBottom="10">
-    <Heading size="md">{props.title}</Heading>
-    <Text>{props.children}</Text>
-    <Box>
-      {props.links
-        ? props.links.map(l => <Link title={l.title} uri={l.uri} />)
-        : ""}
-    </Box>
-  </Box>
-);
-
-type LinkProps = {
-  title: string;
-  uri: string;
-};
-
-const Link: React.FC<LinkProps> = props => (
-  <Button m="2">
-    <ChakraLink href={props.uri}>{props.title}</ChakraLink>
-  </Button>
 );
 
 export default PrivacyLawyer;

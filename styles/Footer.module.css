@@ -1,0 +1,9 @@
+.footerElement:hover,
+.footerElement:focus,
+.footerElement:active {
+  color: gray;
+  transition: color 0.5s ease;
+}
+.footerElement {
+  color: aqua;
+}

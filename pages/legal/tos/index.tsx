@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import Link from "next/link";
-import Header from "../../../components/Header";
+import Header from "../../../components/header-components/Header";
 import Content from "../../../components/Content";
 import Footer from "../../../components/Footer";
 import Lawyer from "../../../components/legal/Lawyer";
