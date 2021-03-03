@@ -90,7 +90,6 @@ const Header = (props: unknown): JSX.Element => {
           direction={["column", "row", "row", "row"]}
           pt={[4, 4, 0, 0]}
         >
-          <MenuItem to="/">Home</MenuItem>
           <MenuItem to="/legal">Legal</MenuItem>
           <MenuItem to="/">FAQ</MenuItem>
           <MenuItem to="/" isLast>
