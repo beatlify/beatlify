@@ -6,10 +6,15 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import styles from '../styles/Footer.module.css'
+import styles from "../styles/Footer.module.css";
 
 const Footer: React.FC = () => (
-  <Box align-self="flex-end" color="#666666" p="5" borderTop={["0.5cm", "solid"]}>
+  <Box
+    align-self="flex-end"
+    color="#666666"
+    p="5"
+    borderTop={["0.5cm", "solid"]}
+  >
     <Box>
       <Heading color="#888888" mb="1" size="xs">
         Navigation
@@ -20,11 +25,11 @@ const Footer: React.FC = () => (
       <Box width="1.5cm" className={styles.footerElement}>
         <Link href="/legal">Legal</Link>
       </Box>
-      <Box width="3.5cm"className={styles.footerElement}>
+      <Box width="3.5cm" className={styles.footerElement}>
         <Link href="/legal/tos">Terms of Service</Link>
       </Box>
       <Box width="3cm" className={styles.footerElement}>
-        <Link href="/legal/privacy" >Privacy Policy</Link>
+        <Link href="/legal/privacy">Privacy Policy</Link>
       </Box>
     </Box>
     <Flex minH="100px" justifyContent="center" bottom="0">
