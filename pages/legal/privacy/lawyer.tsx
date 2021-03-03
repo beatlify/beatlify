@@ -12,50 +12,43 @@ import NextLink from "next/link";
 import Header from "../../../components/Header";
 import Content from "../../../components/Content";
 import Footer from "../../../components/Footer";
+import Lawyer from "../../../components/legal/Lawyer";
 
 const PrivacyLawyer: React.FC = () => (
-  <Box>
-    <Head>
-      <title>Privacy Policy - Legal - Beatlify</title>
-    </Head>
-    <Header />
-    <Content>
-      <Box textAlign="center">
-        <Box margin="10">
-          <Heading size="lg">Privacy Policy</Heading>
-          <Text>Last updated: 2021 March 3</Text>
-        </Box>
-        <Container textAlign="justify">
-          <Par title="1. Definitions">
+  <Lawyer
+    title="Privacy Policy"
+    sumUrl="/legal/privacy/user"
+    date={new Date(1614798121131)}
+    pars={[
+      {
+        title: "1. Definitions",
+        content: (
+          <Text>
             We/Us/Our: The creators and contributors of Beatlify <br />
             You: Our users <br />
             Content: YouTube music and/or videos accessible through the Beatlify
             system.
-          </Par>
-          <Par
-            title="2. Your data"
-            links={[
-              {
-                title: "Google's Privacy Policy",
-                uri: "https://policies.google.com/privacy?hl=en-US",
-              },
-            ]}
-          >
+          </Text>
+        ),
+      },
+      {
+        title: "2. Your Data",
+        content: (
+          <Text>
             To make it clear, we do not handle your data. Our services
             communicate with YouTube and Google servers, who handle your data.
             Please refer to their privacy policy.
-          </Par>
-        </Container>
-        Well, that was long...
-        <Box m="3">
-          <Button>
-            <NextLink href="/legal/privacy/user">Summary</NextLink>
-          </Button>
-        </Box>
-      </Box>
-    </Content>
-    <Footer />
-  </Box>
+          </Text>
+        ),
+        links: [
+          {
+            title: "Google's Privacy Policy",
+            uri: "https://policies.google.com/privacy?hl=en-US",
+          },
+        ],
+      },
+    ]}
+  />
 );
 
 type ParProps = {
