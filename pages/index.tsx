@@ -5,7 +5,7 @@ import Content from "../components/Content";
 import Footer from "../components/Footer";
 
 const Home: React.FC = () => (
-  <Box>
+  <Box display="flex" flex-direction="column">
     <Head>
       <title>Beatlify</title>
       <Link rel="icon" href="/favicon.ico" />

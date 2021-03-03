@@ -8,7 +8,7 @@ import {
 import Link from "next/link";
 
 const Footer: React.FC = () => (
-  <Box color="#666666" p="5" borderTop={["1px", "solid"]}>
+  <Box align-self="flex-end" color="#666666" p="5" borderTop={["1px", "solid"]}>
     <Box>
       <Heading color="#888888" mb="1" size="xs">
         Navigation
