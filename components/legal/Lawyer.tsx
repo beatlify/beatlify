@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import NextLink from "next/link";
-import Header from "../Header";
+import Header from "../header-components/Header";
 import Content from "../Content";
 import Footer from "../Footer";
 
