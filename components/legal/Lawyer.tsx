@@ -23,7 +23,7 @@ type Props = {
 const Lawyer: React.FC<Props> = props => (
   <Box>
     <Head>
-      <title>{props.title} - Legal - Beatlify</title>
+      <title>{props.title} - Beatlify</title>
     </Head>
     <Header />
     <Content>
@@ -31,6 +31,11 @@ const Lawyer: React.FC<Props> = props => (
         <Box margin="10">
           <Heading size="lg">{props.title}</Heading>
           <Text>Last updated: {props.date.toDateString()}</Text>
+          <Box m="3">
+            <Button>
+              <NextLink href={props.sumUrl}>Summary</NextLink>
+            </Button>
+          </Box>
         </Box>
         <Container textAlign="justify">
           {props.pars.map(p => React.createElement(Par, p))}
