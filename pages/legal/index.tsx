@@ -11,12 +11,12 @@ const Legal: React.FC = () => (
       <Box textAlign="center">
         <Heading size="lg">Legal Documents</Heading>
         <Box m="3">
-          <Button bg="#2a2a2a" _hover={{ bg: "#3a3a3a" }}>
+          <Button>
             <Link href="/legal/tos">Terms of Service</Link>
           </Button>
         </Box>
         <Box m="3">
-          <Button bg="#2a2a2a" _hover={{ bg: "#3a3a3a" }}>
+          <Button>
             <Link href="/legal/privacy">Privacy Policy</Link>
           </Button>
         </Box>

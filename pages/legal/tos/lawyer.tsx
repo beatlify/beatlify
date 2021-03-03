@@ -47,12 +47,12 @@ const ToSLawyer: React.FC = () => (
               for a Google Account, therefore you accepted Google and YouTube's
               Terms of Service. <br />
               <Box>
-                <Button m="2" bg="#2a2a2a" _hover={{ bg: "#3a3a3a" }}>
+                <Button m="2">
                   <ChakraLink href="https://policies.google.com/terms?hl=en-US">
                     Google's Terms
                   </ChakraLink>
                 </Button>
-                <Button m="2" bg="#2a2a2a" _hover={{ bg: "#3a3a3a" }}>
+                <Button m="2">
                   <ChakraLink href="https://www.youtube.com/static?template=terms">
                     YouTube's terms
                   </ChakraLink>
@@ -71,7 +71,7 @@ const ToSLawyer: React.FC = () => (
         </Container>
         Well, that was long...
         <Box m="3">
-          <Button bg="#2a2a2a" _hover={{ bg: "#3a3a3a" }}>
+          <Button>
             <Link href="/legal/tos/user">User Mode</Link>
           </Button>
         </Box>

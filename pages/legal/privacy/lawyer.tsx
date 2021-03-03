@@ -42,7 +42,7 @@ const PrivacyLawyer: React.FC = () => (
               communicate with YouTube and Google servers, who handle your data.
               Please refer to their privacy policy.
               <Box>
-                <Button m="2" bg="#2a2a2a" _hover={{ bg: "#3a3a3a" }}>
+                <Button m="2">
                   <ChakraLink href="https://policies.google.com/privacy?hl=en-US">
                     Google's Privacy Policy
                   </ChakraLink>
@@ -53,7 +53,7 @@ const PrivacyLawyer: React.FC = () => (
         </Container>
         Well, that was long...
         <Box m="3">
-          <Button bg="#2a2a2a" _hover={{ bg: "#3a3a3a" }}>
+          <Button>
             <Link href="/legal/privacy/user">User Mode</Link>
           </Button>
         </Box>

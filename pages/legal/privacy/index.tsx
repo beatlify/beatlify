@@ -16,16 +16,12 @@ const Privacy: React.FC = () => (
         <Heading size="lg">Privacy Policy</Heading>
         <Box m="2">
           <Link href="/legal/privacy/user">
-            <Button bg="#2a2a2a" _hover={{ bg: "#3a3a3a" }}>
-              Summary
-            </Button>
+            <Button>Summary</Button>
           </Link>
         </Box>
         <Box m="2">
           <Link href="/legal/privacy/lawyer">
-            <Button bg="#2a2a2a" _hover={{ bg: "#3a3a3a" }}>
-              For lawyers
-            </Button>
+            <Button>For lawyers</Button>
           </Link>
         </Box>
       </Box>

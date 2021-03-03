@@ -22,7 +22,7 @@ const ToSUser: React.FC = () => (
         </Container>
         And what if I wanna sue?
         <Box m="3">
-          <Button bg="#2a2a2a" _hover={{ bg: "#3a3a3a" }}>
+          <Button>
             <Link href="/legal/privacy/lawyer">Lawyer Mode</Link>
           </Button>
         </Box>
