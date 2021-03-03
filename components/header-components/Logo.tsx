@@ -1,7 +1,7 @@
 import React from "react";
-import { Box, Image, Link} from "@chakra-ui/react";
+import { Box, Image, Link } from "@chakra-ui/react";
 
-const Logo: React.FC = (props) => {
+const Logo: React.FC = props => {
   return (
     <Box {...props}>
       <Link
@@ -13,5 +13,5 @@ const Logo: React.FC = (props) => {
       </Link>
     </Box>
   );
-}
+};
 export default Logo;
