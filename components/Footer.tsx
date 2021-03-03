@@ -17,7 +17,7 @@ const Footer: React.FC = () => (
         <Link href="/legal">Legal</Link>
       </Box>
       <Box>
-        <Link href="/legal/tos">Terms of Services</Link>
+        <Link href="/legal/tos">Terms of Service</Link>
       </Box>
       <Box>
         <Link href="/legal/privacy">Privacy Policy</Link>
