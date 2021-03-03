@@ -18,10 +18,4 @@
   align-items: center;
 }
 
-.welcomeTitle:after {
-  content: "\00a0";
-  display: block;
-  margin-top: var(--space);
-  height: 11cm;
-  visibility: hidden;
-}
+

@@ -9,8 +9,7 @@ import Link from "next/link";
 import styles from '../styles/Footer.module.css'
 
 const Footer: React.FC = () => (
-  <div className={styles.footer}>
-  <Box color="#666666" p="5" borderTop={["1px", "solid"]}>
+  <Box className={styles.footer} color="#666666" p="5" borderTop={["1px", "solid"]}>
     <Box>
       <Heading color="#888888" mb="1" size="xs">
         Navigation
@@ -35,7 +34,6 @@ const Footer: React.FC = () => (
       </ChakraLink>
     </Flex>
     </Box>
-  </div>
 );
 
 export default Footer;

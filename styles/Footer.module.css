@@ -7,9 +7,9 @@
     color: gray;
 }
 .footer {
-    height: 50px;
+    margin: calc(100% - 37cm);
+    height: calc(100% - 50px);
     width: 100%;
-    position: fixed;
-    bottom: 4cm;
+    bottom: 0cm;
     left: 0;
 }
